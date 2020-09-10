@@ -1,6 +1,11 @@
 #include <iostream>
 
+#include <gtest/gtest.h>
+#include <gmock/gmock.h>
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    testing::InitGoogleTest();
+    RUN_ALL_TESTS();
+
     return 0;
 }
